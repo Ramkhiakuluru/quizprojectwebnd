@@ -1,0 +1,124 @@
+body{
+    background-color: #0F172A;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+   
+}
+    
+    
+
+#question{
+    color: white;
+    line-height: 1.6;
+    font-size: 20px;
+
+}
+#questioncard{
+    width:80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   
+    
+    max-height: 100vh;
+    border-radius: 20px;
+
+    background-color: #1E293B;
+
+
+    width: 80%;
+    box-shadow: 0 15px 40px rgba(86, 80, 80, 0.35);
+    padding: 20px;
+    
+   
+    
+    
+}
+
+
+#optionbutton1,#optionbutton2,#optionbutton3,#optionbutton4{
+    height: 50px;
+    width: 80%;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #111827;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+     border:solid 2px #374151;
+    color: white;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    transition: 0.3s;
+    
+    
+}
+#optionbutton1:hover,#optionbutton2:hover,#optionbutton3:hover,#optionbutton4:hover{
+    background-color: #38BDF8;
+    box-shadow: 0 2px 10px rgba(215, 204, 204, 0.5);
+    transform:translateY(-2px)
+}
+#optionbutton1:active,#optionbutton2:active,#optionbutton3:active,#optionbutton4:active{
+    transform:translateY(0px)
+}
+
+#restartbtn{
+    width :100px;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 30px;
+    border:none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+#restartbtn:hover{
+    box-shadow: 0 2px 10px rgba(255, 0, 0, 0.5);
+    transform:translateY(-2px)
+}
+#restartbtn:active{
+    transform:translateY(0px)
+}
+#nextbtn{
+    width :100px;
+    background-color: green;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 30px;
+    border:none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#nextbtn:hover{
+    box-shadow: 0 2px 10px rgba(0, 255, 0, 0.5);
+    transform:translateY(-2px)
+}
+#nextbtn:active{
+    transform:translateY(0px)
+}
+
+#progresscontainer {
+    width: 80%;
+    height: 10px;
+    background-color: #334155;
+    border-radius: 100px;
+}
+
+#progressbar {
+    height: 100%;
+    width: 0%;
+    background-color: #38BDF8;
+    border-radius: 100px;
+    transition: all 0.3s;
+}

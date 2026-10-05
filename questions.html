@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Questions</title>
+
+    <link rel="stylesheet" href="stylequestion.css">
+     <link rel="stylesheet" href="endcard.css">
+</head>
+
+<body>
+
+  
+     
+    <div id="questioncard">
+        <div id="progresscontainer">
+    <div id="progressbar"></div>
+      </div>
+      
+            
+            <div id="question">
+
+            </div>
+          
+       
+            
+     
+       
+    <button id="optionbutton1" onclick="selectoption(1); ">
+          
+         
+        </button>
+
+        <button id="optionbutton2" onclick="selectoption(2);">
+            
+           
+        </button>
+
+        <button id="optionbutton3" onclick="selectoption(3);">
+           
+           
+        </button>
+
+        <button id="optionbutton4" onclick="selectoption(4);">
+            
+        </button>
+        <div style="display: flex;width:80vw; justify-content:flex-end;margin-top: 20px;width: 80%;
+display: flex;
+justify-content: space-between;">
+
+        <button id="restartbtn"
+        onclick=" answered=false; currentqno=1; displayQuestion(); displayOptions();progressbar(); score=0;">
+            Restart
+        </button>
+        <button id="nextbtn" onclick="answered=false;currentqno++;
+        if(currentqno > 5) {
+            finalresult();
+        }else{
+            displayQuestion();
+             displayOptions();
+             progressbar(); 
+
+        }; ">
+            Next =>
+        </button>
+
+    </div>
+
+
+    
+
+    </div>
+
+    
+        
+        
+
+    
+
+    <script src="quiz.js">
+        
+    </script>
+
+</body>
+</html>
