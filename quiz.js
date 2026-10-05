@@ -106,7 +106,7 @@ function finalresult(){
             Click the button below to take the quiz again!
         </div>
 
-        <button id="takeagainbtn" onclick="window.location.href='quiz.html'">
+        <button id="takeagainbtn" onclick="window.location.href='index.html'">
             Take Again
         </button>
     `;
